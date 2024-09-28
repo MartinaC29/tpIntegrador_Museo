@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museo Metropolitano de NYC</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    </head>
+    <body>
+        <h1>GALERÍA DEL MUSEO METROPOLITANO DE NEW YORK</h1>
+        <div class="filters">
+            <label for="department">Departamento:</label>
+            <select id="department">
+                <option value="">Todos</option>
+            </select>
+            <label for="keyWord">Palabra Clave</label>
+            <input type="text" id="keyWord" placeholder="Ingrese una palabra clave">
+            <label for="location">Ubicación</label>
+            <input type="text" id="location" placeholder="Ingrese una localización">
+            <button id="search">Buscar</button>
+        </div>
+        <div id="loader" class="loader" style="display: none;"></div>
+        <h2 id="resultadoTitulo" style="display:none;">Resultados</h2>
+        <div class="galeria-container">
+            <div class="galeria" id="galeria"></div>
+        </div>
+        <div class="tarjeta"></div>
+        <div id="pages" class="pages"></div>
+        
+    </body>
+</html>
