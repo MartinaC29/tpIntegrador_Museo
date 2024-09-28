@@ -2,6 +2,9 @@ const express = require('express');
 const app = express();
 const translate = require('node-google-translate-skidz');
 
+const cors = require('cors');
+app.use(cors());
+
 app.use(express.static('public'));
 
 /*app.get('/', (req, res) => {
