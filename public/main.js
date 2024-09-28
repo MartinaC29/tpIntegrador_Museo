@@ -71,7 +71,7 @@ async function searchArtworks(departmentId = '') {
     document.querySelector('.galeria-container').style.display = 'block';  // Muestra el contenedor de la galería
 
     loader.style.display = 'block';
-    
+
     try {
         
         let url = `${URL}/search?q=`;
@@ -85,6 +85,8 @@ async function searchArtworks(departmentId = '') {
         if (location) {
             url += `&geoLocation=${location}`;
         }
+
+        console.log('URL construida:', url);
 
         const response = await fetch(url);
         const data = await response.json();
