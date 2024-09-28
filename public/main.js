@@ -70,8 +70,10 @@ async function searchArtworks(departmentId = '') {
     // Si hay objetos, muestra el contenedor de la galería
     document.querySelector('.galeria-container').style.display = 'block';  // Muestra el contenedor de la galería
 
+    loader.style.display = 'block';
+    
     try {
-        loader.style.display = 'block';
+        
         let url = `${URL}/search?q=`;
 
         if (departmentId) {
