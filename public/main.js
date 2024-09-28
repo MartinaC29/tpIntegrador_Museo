@@ -209,7 +209,7 @@ function calcularPaginasTotales(totalItems, pagElementos) {
 async function translateText(text) {
     if (!text) return '';
     try {
-        const response = await fetch(`https://tu-dominio-en-render.com/translate?text=${encodeURIComponent(text)}`);
+        const response = await fetch(`https://tpintegrador-museo.onrender.com/translate?text=${encodeURIComponent(text)}`);
         const translation = await response.json();
         return translation.translatedText;
     } catch (error) {
